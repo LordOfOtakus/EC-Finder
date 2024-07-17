@@ -1,16 +1,12 @@
-# EC-Finder
-Python script to help find Pokemon that will have an Encryption Constant divisible by 100, when used with Pokefinder
+# PokeFinderHelper
+Python script to help find certain Pokemon lacking filter options in PokeFinder
 
-<p>For those unaware, the way Dudunsparce chooses to evolve into Two or Three Segment form is based on the Pokemon's Encryption Constant. If the EC is divisible cleanly by 100, it'll be a Three-Segment, Two-Segment otherwise.
-Tools like PokeFinder will tell you the Encryption Constant for whatever mon you're trying to RNG, but its displayed in the original Hexadecimal, and there's no way to filter for something like "divisible by 100."
-You can, however, export all of the "hits" in PokeFinder as a text file. Once you have your RNG set up and information popped into PokeFinder, export the hits as a text file, then run the attached python script in terminal or the command line with the file as an argument. (If you've used BDSP Rng before, you should know how.) It should print the Advances in Terminal that have a Pokemon whose Encryption Constant is divisible by 100.
-Example for the script on Mac:
+<p> This program is designed to assist in finding 3 things, Three-Segment Dudunsparce, Wurmple evolutions, and Jumbo / Teeny Pokemon. PokeFinder gives you the information necessary to find these, but its rather slow by hand. Since PokeFinder lets you export all the "hits" it finds, you can take the exported text file and have this program read through it, and find what you're looking for.
+  
+For those unaware, the way Dudunsparce and Wurmple decide their evolutions is based on their Encryption Constant. PokeFinder tells you the Encryption Constant for every advance, but you can't filter for certain ones.
+Similarly. It tells you the Height of wild Pokemon (and perhaps eggs later), but you can't filter for 255 or 0 Height.
 
->python EC\ Finder.py (filename).txt
-
-If you aren't running the command line in the directory where the files are located, dragging them to the terminal to autofill their locations also works.
-
->python /Users/[REDACTED]/Desktop/BDSP\ RNG/EC\ Finder.py /Users/[REDACTED]/Desktop/BDSP\ RNG/(filename).txt</p>
+Once you have your RNG set up and information popped into PokeFinder, export the hits as a text file, then run the attached python script in terminal or the command line and follow the instructions. (If you've used BDSP Rng before, you should know how.) It should print the Advances in Terminal that have a Pokemon whose Encryption Constant is divisible by 100.
 
 
 
